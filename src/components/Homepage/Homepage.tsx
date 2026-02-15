@@ -5,8 +5,8 @@ import clsx from 'clsx';
 
 // Components
 import InfinityMenu from "@/components/InfinityMenu/InfinityMenu";
-import SwiperInfinityMenu from "@/components/SwiperInfinityMenu/SwiperInfinityMenu";
-import FramerInfinityMenu from "@/components/FramerInfinityMenu/FramerInfinityMenu";
+// import SwiperInfinityMenu from "@/components/SwiperInfinityMenu/SwiperInfinityMenu";
+// import FramerInfinityMenu from "@/components/FramerInfinityMenu/FramerInfinityMenu";
 
 const HomePage = () => {
     return (
@@ -15,8 +15,8 @@ const HomePage = () => {
         )}>
             <div className={clsx(styles.container)}>
                 <InfinityMenu />
-                <SwiperInfinityMenu />
-                <FramerInfinityMenu />
+                {/*<SwiperInfinityMenu />*/}
+                {/*<FramerInfinityMenu />*/}
             </div>
         </section>
     );
