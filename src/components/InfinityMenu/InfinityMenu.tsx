@@ -13,23 +13,15 @@ const InfinityMenu = () => {
         "Header 4",
         "Header 5",
         "Header 6",
-        "Header 7",
-        "Header 8",
-        "Header 9",
-        "Header 10",
-        "Header 11",
-        "Header 12",
-        "Header 13",
-        "Header 14",
-        "Header 15",
     ];
 
     // Duplicate headers for infinite loop effect
-    const duplicatedHeaders: string[] = [...headers, ...headers, ...headers, ...headers, ...headers, ...headers];
+    const duplicatedHeaders: string[] = [...headers, ...headers, ...headers];
 
     useEffect(() => {
         const scrollContainer = scrollRef.current;
         if (!scrollContainer) return;
+
 
         const handleScroll = (): void => {
             const { scrollLeft, scrollWidth, clientWidth } = scrollContainer;
@@ -63,6 +55,7 @@ const InfinityMenu = () => {
     //         behavior: 'smooth'
     //     });
     // };
+
 
     return (
         <section className={clsx(styles.infinityMenu)}>
